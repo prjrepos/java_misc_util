@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dna-fle-utility>
+        <Config>
+              
+                <Policy-URL>https://voltage-pp-0000.dataprotection.voltage.com/policy/clientPolicy.xml</Policy-URL>               
+                <Identity>accounts22@dataprotection.voltage.com</Identity>              
+                <ServiceAccount></ServiceAccount>                
+                <TrustStorePath>C:/Program Files/Voltage Security/trustStore</TrustStorePath>
+                <CachePath>C:/Program Files/Voltage Security/cache</CachePath>
+                <Header>true</Header>
+                <Delimiter>,</Delimiter>
+                <AuthMethod>sharedsecret</AuthMethod>           
+                <SharedSecret>voltage123</SharedSecret>               
+                <StorageAccountName></StorageAccountName>
+                <StorageAccountKey></StorageAccountKey>
+                <StorageContainerName></StorageContainerName>
+                <RawDataDirectory></RawDataDirectory>
+                <EncryptedDataDirectory></EncryptedDataDirectory>
+                <DecryptedDataDirectory></DecryptedDataDirectory>                                               
+
+        </Config>
+
+        <Field>
+                <Column>1</Column>
+                <Description>Name</Description>
+        </Field>
+        <!--Field>
+                <Column>2</Column>
+                <Description>Age</Description>
+        </Field-->
+        <Field>
+                <Column>3</Column>
+                <Description>DOB</Description>
+        </Field>
+</dna-fle-utility>

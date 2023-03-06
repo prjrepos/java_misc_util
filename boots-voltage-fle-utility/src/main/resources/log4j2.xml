@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+         <File name="FileAppender" fileName="boots_voltage_fle_Utility-${date:yyyyMMdd}.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} %M [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>   
+    <!-- <Loggers>
+        <Logger name="com.wba.dna" level="debug" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+             <AppenderRef ref="LogToFile"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="LogToFile"/>
+        </Root>
+    </Loggers> -->
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
