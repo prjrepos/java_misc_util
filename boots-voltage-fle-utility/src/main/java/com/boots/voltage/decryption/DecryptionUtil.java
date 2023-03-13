@@ -56,9 +56,8 @@ public class DecryptionUtil {
 
 	public void decryptFile(String configFilePath)
 			throws Exception {
-		try {
-			// Loading the vibesimplejava jar
-			System.loadLibrary("vibesimplejava");
+		
+		try {			
 
 			logger.info("*******************************************************************");
 			logger.info("Start Time : " + new java.util.Date());			

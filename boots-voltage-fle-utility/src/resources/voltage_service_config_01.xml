@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dna-fle-utility>
+        <Config>
+                <!-- <Policy-URL>https://voltage-pp-0000.dev.gcp.boots.com/policy/clientPolicy.xml</Policy-URL> -->
+                <Policy-URL>https://voltage-pp-0000.dataprotection.voltage.com/policy/clientPolicy.xml</Policy-URL>               
+                <Identity>accounts22@dataprotection.voltage.com</Identity>
+                <!-- <Identity>EncryptionWorkerTest_Customer</Identity> -->
+                <ServiceAccount>S-CEpnonpVoltageCart@tools.boots</ServiceAccount>                
+                <!-- <TrustStorePath>C:/Program Files/Voltage Security/trustStore</TrustStorePath>
+                <CachePath>C:/Program Files/Voltage Security/cache</CachePath> -->
+                <TrustStorePath>./trustStore</TrustStorePath>
+                <CachePath>./cache</CachePath>
+                <Header>true</Header>
+                <Delimiter>,</Delimiter>
+                <AuthMethod>sharedsecret</AuthMethod>
+                <!-- <AuthMethod>usernamepassword</AuthMethod> -->
+                <SharedSecret>voltage123</SharedSecret>
+                <!-- <UserCredential>Vxe7KnkF!</UserCredential> -->
+                <!-- <StorageAccountName>devceployadls01</StorageAccountName>
+                <StorageAccountKey>tDoFUVjhzAhNKnkMCOFSk3pDIoCXP4CC/pqqSVX6F/eI05lXSZ4AuTdqMVP7SZP1KyC9jM24ZHEG+AStX4aOlw==</StorageAccountKey>
+                <StorageContainerName>batch</StorageContainerName> -->
+                <StorageAccountName>samplepoc2022</StorageAccountName>
+                <StorageAccountKey>gF/wMAN3w28a/HBI8hU6PRb00mHb+gUzWOLyae8n5Ss34P9rsrfgg/vaY/+aan0/QhtY/pVMDsUT+AStqT2Jog==</StorageAccountKey>
+                <StorageContainerName>azure-batch-storage</StorageContainerName>
+                <RawDataDirectory>azbatch-voltage-data/inbound</RawDataDirectory>
+                <EncryptedDataDirectory>azbatch-voltage-data/encrypted_import</EncryptedDataDirectory>
+                <DecryptedDataDirectory>azbatch-voltage-data/decrypted_export</DecryptedDataDirectory>                                           
+        </Config>
+        <Field>
+                <Column>1</Column>
+                <Description>Name</Description>
+        </Field>
+        <!--Field>
+                <Column>2</Column>
+                <Description>Age</Description>
+        </Field-->
+        <Field>
+                <Column>3</Column>
+                <Description>DOB</Description>
+        </Field>
+</dna-fle-utility>

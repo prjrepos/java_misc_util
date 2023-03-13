@@ -12,10 +12,11 @@
 		<maven.test.skip>true</maven.test.skip>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>com.voltage.securedata</groupId>			
-  			<artifactId>vibesimplejava</artifactId>
-			<version>1.0</version>				
+		<dependency>	
+			
+			<groupId>com.voltage.securedata</groupId>
+			<artifactId>vibesimplejava</artifactId>
+			<version>1.0</version>			
 			<!--  added external library to local maven repo and removed the below lines from pom.xml -->
 			<!-- mvn install:install-file -Dfile="C:\workspaces_CEP\java-springboots-poc\boots-voltage-fle-utility\lib\vibesimplejava.jar" -DgroupId=com.voltage.securedata -DartifactId=vibesimplejava -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true -->
 			<!-- <scope>system</scope>		

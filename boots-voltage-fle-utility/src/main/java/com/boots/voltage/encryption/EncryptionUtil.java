@@ -48,10 +48,7 @@ public class EncryptionUtil {
 
 	public void encryptFile(String configFilePath) throws Exception {
 
-		try {
-			// Loading the vibesimplejava jar
-			//logger.info("Java Lib Path: " + System.getProperty("java.library.path"));
-			System.loadLibrary("vibesimplejava");
+		try {			
 
 			logger.info("*******************************************************************");
 			logger.info("Start Time : " + new java.util.Date());			

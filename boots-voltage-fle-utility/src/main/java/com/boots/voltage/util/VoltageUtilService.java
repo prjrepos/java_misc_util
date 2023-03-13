@@ -58,8 +58,7 @@ public class VoltageUtilService {
             library = new LibraryContext.Builder()
                     .setPolicyURL(policyURL)
                     .setFileCachePath(cachePath)
-                    .setTrustStorePath(trustStorePath)
-                    // .setClientIdProduct("DUMMY_APP", "1.0").build();
+                    .setTrustStorePath(trustStorePath)                  
                     .setClientIdProduct("Simple_API_Java_FPE_Sample", "1.2").build();
             /*
              * Creating the AES object Username and Password authentication
@@ -116,8 +115,7 @@ public class VoltageUtilService {
             library = new LibraryContext.Builder()
                     .setPolicyURL(policyURL)
                     .setFileCachePath(cachePath)
-                    .setTrustStorePath(trustStorePath)
-                    // .setClientIdProduct("DUMMY_APP", "1.0").build();
+                    .setTrustStorePath(trustStorePath)                   
                     .setClientIdProduct("Simple_API_Java_FPE_Sample", "1.2").build();
             /*
              * Creating the AES object Username and Password authentication
@@ -176,25 +174,17 @@ public class VoltageUtilService {
 
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-
             listColumns = new ArrayList<Integer>();
             List<String> listDescriptionColumns = new ArrayList<String>();
             File fXmlFile = new File(xmlFilePath);
-
             Document doc = dBuilder.parse(fXmlFile);
-
             doc.getDocumentElement().normalize();
-
             NodeList nList = doc.getElementsByTagName("Field");
-
             NodeList confList = doc.getElementsByTagName("Config");
-
             Node cNode = confList.item(0);
             Element cElem = (Element) cNode;
-
             policyURL = cElem.getElementsByTagName("Policy-URL").item(0).getTextContent();
             identity = cElem.getElementsByTagName("Identity").item(0).getTextContent();
-
             trustStorePath = cElem.getElementsByTagName("TrustStorePath").item(0).getTextContent();
             cachePath = cElem.getElementsByTagName("CachePath").item(0).getTextContent();
             isHeaderStr = cElem.getElementsByTagName("Header").item(0).getTextContent();
